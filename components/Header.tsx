@@ -13,8 +13,8 @@ function Header() {
           <h1 className="text-2xl cursor-pointer">Blogeeker</h1>
         </Link>
         <div className="hidden md:inline-flex items-center space-x-5">
-          {/* <h3>About</h3>
-          <h3>Contact</h3> */}
+          {/* <h3>About</h3>*/}
+          {/* <h3>Contact</h3>  */}
           {/* <h3 className="text-white bg-green-600 px-4 py-1 rounded-full">Follow</h3> */}
         </div>
       </div>
@@ -22,9 +22,9 @@ function Header() {
         {/* <h3>
           Sign In
         </h3> */}
-        {/* <h3 className="border px-4 py-1 rounded-full">
-          Get Started
-        </h3> */}
+        <h3 className="border px-4 py-1 rounded-full cursor-pointer hover:bg-green-400 hover:text-white transition-all">
+          <Link  href={`/categories/`}>Categories</Link>
+        </h3>
       </div>
     </header>
   )

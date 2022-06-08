@@ -7,6 +7,7 @@ export interface Post{
         image:string;
     };
     comments: Comment[];
+    categories:Categories[];
     description:string;
     mainImage:{
         assets:{
@@ -17,6 +18,12 @@ export interface Post{
         current:string;
     };
     body:[object];
+}
+
+export interface Categories {
+    _id: string,
+    description: string;
+    title: string;
 }
 
 export interface Comment {

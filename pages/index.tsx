@@ -14,7 +14,7 @@ export default function Home({posts}:Props) {
 // const Home: NextPage = (props) => {
 
 
-  // console.log(posts);
+  console.log(posts);
 
   return (
     <div className="max-w-7xl mx-auto">
@@ -85,6 +85,7 @@ export const getServerSideProps = async ()=>{
     name,
     image,
   },
+  categories,
     description,
     mainImage,
     slug

@@ -8,6 +8,7 @@ import {useForm,SubmitHandler} from 'react-hook-form';
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import { dark } from 'react-syntax-highlighter/dist/esm/styles/prism';
 import { agate,docco } from 'react-syntax-highlighter/dist/esm/styles/hljs';
+import Link from 'next/link';
 
 
 interface IFormInput {
@@ -54,7 +55,13 @@ function Post({post}:Props) {
       <article className='max-w-3xl mx-auto p-5'>
         <h1 className='text-3xl mt-10 mb-3'>{post.title}</h1>
         <h2 className='text-xl font-light text-gray-500 mb-2'>{post.description}</h2>
-
+        <h3 className='text-xxl font-light text-gray-500 mb-2'>
+          Categories: 
+          {post.categories.map((category)=>(
+            // <Link key={category['title']} href={`/post/test`}></Link>
+            <></>
+          ))}
+        </h3>
 
         <div className='flex items-center space-x-2'>
           <img className='h-10 w-10 rounded-full' src={urlFor(post.author.image).url()!} alt="" />
@@ -213,6 +220,10 @@ export const getStaticProps:GetStaticProps = async({params}) =>{
     author->{
     name,
     image
+   },
+   categories[]->{
+    title,
+    description,
    },
    "comments":*[
     _type == "comment" &&
