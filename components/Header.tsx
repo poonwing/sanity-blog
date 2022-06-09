@@ -7,6 +7,7 @@ function Header() {
       <Head>
         <title>Blogeeker - 個人博客 - 科技/理財/生活</title>
         <link rel="icon" href="/b.png" />
+        <meta name="google-site-verification" content="r5OQ-RpoNj1tCUjfAyVZH8rL17Wwtdqmdnm3vu_giPs" />
         <meta name="description" content="Blogeeker - Alok的個人博客, 分享前後端應用開發、物聯網、嵌入式、機器學習等知識;業餘研究股市,分享策略和回測結果" />
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2667865280424651" crossOrigin="anonymous"></script>
       </Head>
