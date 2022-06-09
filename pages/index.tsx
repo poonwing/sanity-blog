@@ -21,6 +21,7 @@ export default function Home({posts}:Props) {
       <Head>
         <title>Blogeeker</title>
         <link rel="icon" href="/favicon.ico" />
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2667865280424651" crossorigin="anonymous"></script>
       </Head>
 
       <Header/>
