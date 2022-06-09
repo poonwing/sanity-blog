@@ -1,8 +1,15 @@
 import Link from "next/link"
+import Head from 'next/head'
 
 function Header() {
   return (
     <header className="flex justify-between p-5 max-w-7xl mx-auto">
+      <Head>
+        <title>Blogeeker - 個人博客 - 科技/理財/生活</title>
+        <link rel="icon" href="/b.png" />
+        <meta name="description" content="Blogeeker - Alok的個人博客, 分享前後端應用開發、物聯網、嵌入式、機器學習等知識;業餘研究股市,分享策略和回測結果" />
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2667865280424651" crossOrigin="anonymous"></script>
+      </Head>
       <div className="flex items-center space-x-5">
         <Link href="/">
           {/* <img 
